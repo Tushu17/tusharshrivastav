@@ -53,8 +53,8 @@ export const HeroSection = React.memo(function HeroSection() {
             <span className="text-primary">
               Web Developer & Client Coordinator
             </span>{" "}
-            with hands-on experience in building web applications using React.js
-            & Next.js with TypeScript, TailwindCSS, and Node.js.
+            with hands-on experience in building web applications and Ai
+            automation.
           </p>
         </motion.div>
 
@@ -64,7 +64,7 @@ export const HeroSection = React.memo(function HeroSection() {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <p className="font-mono text-primary text-sm tracking-widest uppercase">
-            Currently available for freelance
+            I'm always available for intriguing projects.
           </p>
         </motion.div>
       </div>

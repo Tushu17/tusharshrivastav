@@ -24,6 +24,11 @@ export interface Project {
   link?: string;
   github?: string;
   thumbnail: string;
+  featured?: boolean;
+  images?: {
+    pc: string;
+    mobile: string;
+  };
 }
 
 export interface PortfolioData {
@@ -46,8 +51,15 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   name: "Tushar Shrivastav",
   role: "Web Developer & Client Coordinator",
-  about:
-    "Web Developer and Digital Specialist with ~3 years of freelance and startup experience. Proficient in JavaScript, React, and Next.js, delivering responsive web applications. Played a key role in client coordination and delivery across 100+ projects, with strong QA, bug-fixing, and cross-browser testing experience.",
+
+  about: `I’m a web developer and digital marketer with hands-on experience building real-world products using JavaScript-based tech stacks. My work sits at the intersection of engineering, product, and growth — where clean code meets practical business outcomes.
+
+I have worked as a freelance developer and as part of startup teams, delivering production-ready applications using React, Next.js, Node.js, Supabase, and modern UI frameworks. I enjoy building systems end-to-end — from frontend experience and backend logic to automation, analytics, and deployment.
+
+Currently, I’m focused on creating AI-driven workflows for visual content generation, combining relevant video assets with tone-aligned audio using AI and LLMs. I’m particularly interested in products that scale through automation, smart tooling, and thoughtful UX.
+
+I value clarity, ownership, and execution. I prefer shipping fewer things well over building many things halfway, and I’m always looking to work on problems that require both technical depth and product thinking.`,
+
   profileImage: "/images/profilep.webp",
   blogUrl: "",
   social: [
@@ -56,7 +68,21 @@ export const portfolioData: PortfolioData = {
       url: "mailto:tusharshrivastav1711@gmail.com",
       icon: "Mail",
     },
-    // Add other social placeholders if needed, cleared Vipul's data
+    {
+      platform: "Github",
+      url: "https://github.com/Tushu17",
+      icon: "Github",
+    },
+    {
+      platform: "Linkedin",
+      url: "https://www.linkedin.com/in/tushar-shrivastav17/",
+      icon: "Linkedin",
+    },
+    {
+      platform: "X",
+      url: "https://x.com/Tushar186024",
+      icon: "X",
+    },
   ],
   skills: {
     frontend: [
@@ -89,9 +115,10 @@ export const portfolioData: PortfolioData = {
       "Git",
       "n8n",
       "Looker Studio",
-      "AI Pipelines",
-      "QA Testing",
-      "VS Code",
+      "Vercel",
+      "Docker",
+      "Figma",
+      "Remotion",
     ],
   },
   experience: [
@@ -119,17 +146,40 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
-      title: "Newsifai.com",
+      title: "Newsifai",
       description:
-        "Developed an AI-powered news platform using automated content pipelines for generation, inspection, and publishing.",
-      techStack: ["AI", "Automation", "Next.js", "Content Pipelines"],
+        "A revolutionary AI-powered news platform that delivers 'information wrapped in entertainment'. Newsifai leverages advanced AI pipelines to curate, summarize, and present personalized news content, making users smarter with every scroll. Built with a complex architecture involving autonomous video generation, AI content analysis, and a high-performance Next.js frontend, it represents the future of digital news consumption.",
+      techStack: ["Next.js", "React", "Tailwind CSS", "Supabase", "AI/LLMs"],
       link: "https://newsifai.com",
+      github: "", // Private codebase
+      thumbnail: "/images/projects/newsifai-pc-photo.webp",
+      featured: true,
+      images: {
+        pc: "/images/projects/newsifai-pc-photo.webp",
+        mobile: "/images/projects/newsifai-mobile-photo2.webp",
+      },
+    },
+    {
+      title: "visualsifai",
+      description:
+        "Currently working on a more efficient way to create visual content by combining relevant video assets with audio tailored to deliver the message in the right tone using AI and LLMs.",
+      techStack: [
+        "Remotion",
+        "Next.js",
+        "React",
+        "Docker",
+        "firebase",
+        "Node.js",
+        "Express",
+      ],
+      link: "https://visualsifai.vercel.app/",
       github: "",
-      thumbnail: "/images/projects/portfolio.webp", // maintaining placeholder
+      thumbnail: "/images/projects/visualsifai.webp",
     },
     {
       title: "treasrup",
-      description: "Ecommerce website for selling products.",
+      description:
+        "E-commerce platform with secure payments, intuitive product upload flows, and responsive UI, built using Next.js and Supabase.",
       techStack: [
         "Next.js",
         "React",
@@ -140,22 +190,15 @@ export const portfolioData: PortfolioData = {
       ],
       link: "https://treasrup.vercel.app/",
       github: "",
-      thumbnail: "/images/projects/portfolio.webp",
+      thumbnail: "/images/projects/treasrup.webp",
     },
     {
       title: "Zoopster-clothing",
       description: "Ecommerce website for selling products.",
-      techStack: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "postgresql",
-        "Node.js",
-        "Express",
-      ],
-      link: "https://treasrup.vercel.app/",
+      techStack: ["Next.js", "React", "firebase", "Node.js", "Express"],
+      link: "https://zoopster-clothing.vercel.app/",
       github: "",
-      thumbnail: "/images/projects/portfolio.webp",
+      thumbnail: "/images/projects/zoopster-clothing.webp",
     },
   ],
 };

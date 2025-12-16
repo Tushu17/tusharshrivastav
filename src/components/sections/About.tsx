@@ -21,39 +21,19 @@ export const AboutSection = React.memo(function AboutSection() {
             transition={{ duration: 0.5 }}
             className="flex-1 text-slate-400 text-lg leading-relaxed space-y-6"
           >
-            <p>
-              Hi, my name is {portfolioData.name}, a {portfolioData.role}.{" "}
-              {portfolioData.about}
-            </p>
-            <p>
-              Fast-forward to today, and I&apos;ve had the privilege of working
-              at various organizations, building accessible, inclusive products
-              and digital experiences for a variety of clients.
-            </p>
-            <p>
-              My main focus these days is building accesible, inclusive products
-              and digital experiences at{" "}
-              <span className="text-primary">
-                {portfolioData.experience[0]?.company || "Sahindia Tech"}
-              </span>{" "}
-              for a variety of clients.
-            </p>
-
-            <p>
-              Here are a few technologies I&apos;ve been working with recently:
-            </p>
-            <ul className="grid grid-cols-2 gap-2 text-sm font-mono mt-4">
-              {portfolioData.skills.frontend.slice(0, 4).map((skill, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <span className="text-primary">▹</span> {skill}
-                </li>
-              ))}
-              {portfolioData.skills.backend.slice(0, 4).map((skill, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <span className="text-primary">▹</span> {skill}
-                </li>
-              ))}
-            </ul>
+            {portfolioData.about.split("\n\n").map((paragraph, index) => (
+              <p key={index} className="mb-4">
+                {index === 0 && (
+                  <>
+                    Hi, my name is{" "}
+                    <span className="text-primary">{portfolioData.name}</span>,
+                    a <span className="text-primary">{portfolioData.role}</span>
+                    .{" "}
+                  </>
+                )}
+                {paragraph}
+              </p>
+            ))}
           </motion.div>
 
           {/* Right Image */}
