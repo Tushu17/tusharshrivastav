@@ -50,7 +50,7 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   name: "Tushar Shrivastav",
-  role: "Web Developer & Client Coordinator",
+  role: "Product Developer & Client Coordinator",
 
   about: `I’m a web developer and digital marketer with hands-on experience building real-world products using JavaScript-based tech stacks. My work sits at the intersection of engineering, product, and growth — where clean code meets practical business outcomes.
 

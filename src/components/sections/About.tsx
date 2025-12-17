@@ -26,9 +26,7 @@ export const AboutSection = React.memo(function AboutSection() {
                 {index === 0 && (
                   <>
                     Hi, my name is{" "}
-                    <span className="text-primary">{portfolioData.name}</span>,
-                    a <span className="text-primary">{portfolioData.role}</span>
-                    .{" "}
+                    <span className="text-primary">{portfolioData.name}</span>,{" "}
                   </>
                 )}
                 {paragraph}

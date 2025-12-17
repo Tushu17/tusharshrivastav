@@ -49,12 +49,9 @@ export const HeroSection = React.memo(function HeroSection() {
           className="max-w-2xl"
         >
           <p className="text-lg text-slate-400 mb-12 leading-relaxed">
-            I&apos;m a passionate{" "}
-            <span className="text-primary">
-              Web Developer & Client Coordinator
-            </span>{" "}
-            with hands-on experience in building web applications and Ai
-            automation.
+            I&apos;m a passionate about{" "}
+            <span className="text-primary">Technology</span> with hands-on
+            experience in building web applications and Ai automation.
           </p>
         </motion.div>
 
