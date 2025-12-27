@@ -9,8 +9,8 @@ export function StructuredData() {
     name: portfolioData.name,
     jobTitle: portfolioData.role,
     description: portfolioData.about,
-    url: "https://www.tusharshrivastav.com",
-    image: "https://www.tusharshrivastav.com/images/profilep.webp",
+    url: "https://tusharshrivastav.com",
+    image: "https://tusharshrivastav.com/images/profilep.webp",
     sameAs: portfolioData.social
       .filter((s) => s.platform !== "Email")
       .map((s) => s.url),
@@ -34,7 +34,7 @@ export function StructuredData() {
     "@type": "WebSite",
     name: `${portfolioData.name} Portfolio`,
     description: portfolioData.about,
-    url: "https://www.tusharshrivastav.com",
+    url: "https://tusharshrivastav.com",
     author: {
       "@type": "Person",
       name: portfolioData.name,

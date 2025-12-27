@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.tusharshrivastav.com"),
+  metadataBase: new URL("https://tusharshrivastav.com"),
   title: {
     template: `%s | ${portfolioData.name}`,
     default: `${portfolioData.name} - ${portfolioData.role}`,
@@ -45,9 +45,7 @@ export const metadata: Metadata = {
     "SEO",
     "Automation",
   ],
-  authors: [
-    { name: portfolioData.name, url: "https://www.tusharshrivastav.com" },
-  ],
+  authors: [{ name: portfolioData.name, url: "https://tusharshrivastav.com" }],
   creator: portfolioData.name,
   publisher: portfolioData.name,
   formatDetection: {
@@ -75,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${portfolioData.name} - ${portfolioData.role}`,
     description: portfolioData.about,
-    creator: "", // No twitter handle provided
+    creator: "@Tushar186024",
     images: ["/images/profilep.webp"],
   },
   robots: {
