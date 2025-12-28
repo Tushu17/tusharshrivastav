@@ -45,8 +45,8 @@ export function StructuredData() {
   const profilePageSchema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    dateCreated: "2024-11-20",
-    dateModified: new Date().toISOString().split("T")[0],
+    dateCreated: "2024-11-20T08:00:00+05:30",
+    dateModified: new Date().toISOString(),
     mainEntity: {
       "@type": "Person",
       name: portfolioData.name,
