@@ -65,7 +65,7 @@ export function Navbar() {
           </ol>
 
           <a
-            href="/files/resume.pdf"
+            href="/files/Tushar-Shrivastav.pdf"
             target="_blank"
             className="px-5 py-2 border border-primary text-primary font-mono text-sm rounded bg-transparent hover:bg-primary/10 transition-colors"
           >

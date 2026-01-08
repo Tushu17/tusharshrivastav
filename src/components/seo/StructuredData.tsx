@@ -1,5 +1,3 @@
-"use client";
-
 import { portfolioData } from "@/data/portfolio";
 
 export function StructuredData() {
@@ -46,7 +44,7 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     dateCreated: "2024-11-20T08:00:00+05:30",
-    dateModified: new Date().toISOString(),
+    dateModified: "2024-11-20T08:00:00+05:30",
     mainEntity: {
       "@type": "Person",
       name: portfolioData.name,
