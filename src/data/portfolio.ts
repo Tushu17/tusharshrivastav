@@ -50,7 +50,7 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   name: "Tushar Shrivastav",
-  role: "Product Developer & Client Coordinator",
+  role: "Product Developer",
 
   about: `I’m a web developer and digital marketer with hands-on experience building real-world products using JavaScript-based tech stacks. My work sits at the intersection of engineering, product, and growth — where clean code meets practical business outcomes.
 
@@ -124,12 +124,11 @@ I value clarity, ownership, and execution. I prefer shipping fewer things well o
   experience: [
     {
       company: "Sahindia Tech",
-      role: "Web Developer & Client Coordinator",
+      role: "Product Developer",
       period: "11/2023 – 03/2025",
       description: [
-        "Developed responsive React-based web applications using Tailwind and Node.js.",
-        "Partnered with design and marketing teams to align UI/UX with brand and campaign strategy.",
-        "Contributed to agile sprints, planning, and retrospectives.",
+        "Led end-to-end development and growth of a responsive React-based web application (omegleapp.me⁠), scaling it to 2K concurrent active users through continuous feature optimization",
+        "Built and executed online marketing campaigns and grew a Reddit community to drive user acquisition and engagement.Incorporated real-time user feedback into agile development cycles, improving product functionality, retention, and overall user experience.",
       ],
     },
     {
